@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// Back-end
 Auth::routes();
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
+});
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', function ()
+
+Route::get('/', 'Admin\AdminController@index')->name('admin.index');
+Route::get('/home', function ()
 {
-	return view('admin.index');
+	return view('homepage.index');
 });
