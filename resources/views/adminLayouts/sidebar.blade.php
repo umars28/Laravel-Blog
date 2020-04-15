@@ -22,6 +22,9 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+            <ul class="treeview-menu">
+                <li class="{{ Route::is('admin.homepage.index') ? 'active' : '#' }}"><a href="{{ route('admin.homepage.index') }}"><i class="fa fa-circle-o"></i> Edit Main Content</a></li>
+            </ul>
         </li>
         <li class="treeview">
           <a href="#">
