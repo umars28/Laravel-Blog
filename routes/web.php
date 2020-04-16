@@ -19,10 +19,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 Route::get('/', 'Admin\AdminController@index')->name('admin.index');
 Route::group(['prefix' => 'Homepage'], function () {
     Route::get('/homepage', 'Admin\AdminHomepageController@index')->name('admin.homepage.index');
+    Route::post('/update/{id}', 'Admin\AdminHomepageController@update')->name('admin.homepage.update');
 });
 
+Route::get('/home', 'HomepageController@index')->name('homepage.index');
 
-Route::get('/home', function ()
-{
-	return view('homepage.index');
-});

@@ -8,23 +8,22 @@
     </section>
     <section class="content">
         <div class="box">
-            <form method="post" action="" enctype="multipart/form-data">
+            @if($message = Session::get('message'))
+                <div class="alert alert-success">{{ $message }}</div>
+            @endif
+            <form method="post" action="{{ route('admin.homepage.update', $homepages->id) }}" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="id" value="">
+                <input type="hidden" name="id" value="{{ $homepages->id }}">
                 <div class="box-body margin-bottom">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
                                 <label for="title">Title</label>
-                                <input type="email" class="form-control" id="title" placeholder="Enter title">
+                                <input type="text" class="form-control" name="title" value="{{ $homepages->title }}" id="title" placeholder="Enter title">
                             </div>
                             <div class="form-group">
-                                <label for="desc">Description</label>
-                                <input type="password" class="form-control" id="desc" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="img">Image</label>
-                                <input type="file" id="img">
+                                <label for="summer">Description</label>
+                                <textarea id="summer" name="description" class="form-control js-summernote">{{ $homepages->description }}</textarea>
                             </div>
                          </div>
                     </div>

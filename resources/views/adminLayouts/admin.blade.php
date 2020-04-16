@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="{{ url('/admin/css/plugins/daterangepicker.css') }}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{ url('/admin/css/plugins/bootstrap3-wysihtml5.min.css') }}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{ url('/admin/css/plugins/summernote.min.css') }}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,11 +85,13 @@
 <script src="{{ url('/admin/js/plugins/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ url('/admin/js/plugins/fastclick.js') }}"></script>
+<!-- summernote js -->
+<script src="{{ url('/admin/js/plugins/summernote.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ url('/admin/js/adminlte.min.js') }}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ url('/admin/js/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ url('/admin/js/demo.js') }}"></script>
+<!-- Application js -->
+<script src="{{ url('/admin/js/application.js') }}"></script>
 </body>
 </html>
