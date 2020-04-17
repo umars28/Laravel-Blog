@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1a3026f-b62f-46d8-bcd7-8d74fb143b68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/categories.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/categoriesEdit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_15_110622_create_abouts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_15_110622_create_abouts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/HomepagesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HomepagesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminHomepages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminHomepages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -165,7 +163,7 @@
       <workItem from="1586843405552" duration="16017000" />
       <workItem from="1586947485520" duration="11863000" />
       <workItem from="1587039293946" duration="6199000" />
-      <workItem from="1587124412079" duration="3338000" />
+      <workItem from="1587124412079" duration="11605000" />
     </task>
     <servers />
   </component>
@@ -173,17 +171,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="518" y="288" key="NewPhpFileDialog" timestamp="1587125556380">
+    <state x="505" y="191" key="NewPhpFileDialog" timestamp="1587135174058">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="518" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587125556380" />
+    <state x="505" y="191" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587135174058" />
     <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587124503988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587124503988" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587127365502">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587136167117">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587127365502" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587136167117" />
   </component>
 </project>

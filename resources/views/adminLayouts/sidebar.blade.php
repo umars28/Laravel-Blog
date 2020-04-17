@@ -36,7 +36,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> List Article</a></li>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Category</a></li>
+            <li class="{{ Request::segment(3) == 'categories' ? 'active' : '#'  }}"><a href="{{ route('admin.categories.index') }}"><i class="fa fa-circle-o"></i> Category</a></li>
           </ul>
         </li>
         <li class="treeview">

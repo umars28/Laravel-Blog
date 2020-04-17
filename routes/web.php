@@ -25,6 +25,12 @@ Route::group(['prefix' => 'Admin'], function () {
     Route::get('/about', 'Admin\AdminAboutController@index')->name('admin.about.index');
     Route::post('/about/{id}', 'Admin\AdminAboutController@update')->name('admin.about.update');
 });
+Route::group(['prefix' => 'Admin'], function () {
+    Route::get('/categories', 'Admin\AdminCategoriesTable@index')->name('admin.categories.index');
+    Route::get('/categories/save', 'Admin\AdminCategoriesTable@save')->name('admin.categories.save');
+    Route::get('/categories/edit{id}', 'Admin\AdminCategoriesTable@edit')->name('admin.categories.edit');
+    Route::put('/categories/update{id}', 'Admin\AdminCategoriesTable@update')->name('admin.categories.update');
+});
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');
 

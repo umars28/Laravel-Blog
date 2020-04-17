@@ -4,30 +4,30 @@
 @endsection
 @section('content')
     <section class="content-header">
-        <h1>Edit About</h1>
+        <h1>Edit Category</h1>
     </section>
     <section class="content">
         <div class="box">
             @if($message = Session::get('message'))
                 <div class="alert alert-success">{{ $message }}</div>
             @endif
-            <form method="post" action="{{ route('admin.about.update', $about->id) }}">
+            <form method="post" action="{{ route('admin.categories.update', $categories->id) }}">
                 @csrf
-                <input type="hidden" name="id" value="{{ $about->id }}">
+                @method('PUT')
+                <input type="hidden" name="id" value="{{ $categories->id }}">
                 <div class="box-body margin-bottom">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" name="title" value="{{ $about->title }}" id="title" placeholder="Enter title">
+                                <label for="cat">Category</label>
+                                <input type="text" class="form-control" name="category" value="{{ $categories->category }}" id="cat" placeholder="Input category">
                             </div>
                             <div class="form-group">
-                                <label for="sub">Sub Title</label>
-                                <input type="text" class="form-control" name="sub_title" value="{{ $about->sub_title }}" id="sub" placeholder="Enter sub title">
-                            </div>
-                            <div class="form-group">
-                                <label for="summer">Description</label>
-                                <textarea id="summer" name="description" class="form-control js-summernote">{{ $about->description }}</textarea>
+                                <label for="status">Status</label>
+                                <select class="form-control" name="status" id="status" aria-describedby="status" placeholder="Select status">
+                                    <option value="ACTIVE" {{ $categories->status == 'ACTIVE' ? 'selected' : '' }}>Active</option>
+                                    <option value="INACTIVE" {{ $categories->status == 'INACTIVE' ? 'selected' : '' }}>Inactive</option>
+                                </select>
                             </div>
                         </div>
                     </div>
