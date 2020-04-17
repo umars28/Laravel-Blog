@@ -46,6 +46,9 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+            <ul class="treeview-menu">
+                <li class="{{ Route::is('admin.about.index') ? 'active' : '#' }}"><a href="{{ route('admin.about.index') }}"><i class="fa fa-circle-o"></i> Edit About</a></li>
+            </ul>
         </li>
         <li class="treeview">
           <a href="#">

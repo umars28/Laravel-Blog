@@ -17,10 +17,15 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
 });
 Route::get('/', 'Admin\AdminController@index')->name('admin.index');
-Route::group(['prefix' => 'Homepage'], function () {
+Route::group(['prefix' => 'Admin'], function () {
     Route::get('/homepage', 'Admin\AdminHomepageController@index')->name('admin.homepage.index');
     Route::post('/update/{id}', 'Admin\AdminHomepageController@update')->name('admin.homepage.update');
 });
+Route::group(['prefix' => 'Admin'], function () {
+    Route::get('/about', 'Admin\AdminAboutController@index')->name('admin.about.index');
+    Route::post('/about/{id}', 'Admin\AdminAboutController@update')->name('admin.about.update');
+});
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');
+
 

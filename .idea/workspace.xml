@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1a3026f-b62f-46d8-bcd7-8d74fb143b68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminHomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminHomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Homepages.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Homepages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap-datepicker.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap3-wysihtml5.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/bootstrap3-wysihtml5.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/fastclick.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/fastclick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/jquery-jvectormap-1.2.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/jquery-jvectormap-1.2.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/jquery.slimscroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/jquery.sparkline.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/plugins/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/plugins/moment.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_15_110622_create_abouts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_15_110622_create_abouts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/HomepagesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/HomepagesTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminHomepages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminHomepages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminLayouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminLayouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/homepage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/homepage/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +164,8 @@
       <updated>1586843398220</updated>
       <workItem from="1586843405552" duration="16017000" />
       <workItem from="1586947485520" duration="11863000" />
-      <workItem from="1587039293946" duration="5890000" />
+      <workItem from="1587039293946" duration="6199000" />
+      <workItem from="1587124412079" duration="3338000" />
     </task>
     <servers />
   </component>
@@ -183,17 +173,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="518" y="288" key="NewPhpFileDialog" timestamp="1586955793948">
+    <state x="518" y="288" key="NewPhpFileDialog" timestamp="1587125556380">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="518" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1586955793948" />
-    <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587039485529">
+    <state x="518" y="288" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587125556380" />
+    <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587124503988">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587039485529" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1586953383304">
+    <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587124503988" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587127365502">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1586953383304" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587127365502" />
   </component>
 </project>
