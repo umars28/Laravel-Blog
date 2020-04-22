@@ -4,16 +4,18 @@
     <section class="sidebar">
 
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
+        <ul class="sidebar-menu">
           <li class="treeview">
-              <a href="#">
-                  <i class="fa fa-dashboard"></i>
-                  <span>Dashboard</span>
-                  <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+             <a href="{{ route('admin.dashboard.index') }}">
+             <i class="fa fa-dashboard"></i>
+             <span>Dashboard</span>
+             <span class="pull-right-container">
+             <i class="fa fa-angle-left pull-right"></i>
             </span>
-              </a>
+             </a>
           </li>
+        </ul>
+      <ul class="sidebar-menu" data-widget="tree">
         <li class="treeview">
           <a href="#">
             <i class="fa fa-home"></i>
@@ -70,8 +72,8 @@
             </span>
               </a>
               <ul class="treeview-menu">
-                  <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> List FAQ</a></li>
-                  <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Subject</a></li>
+                  <li class="{{ Route::is('admin.faq.index') ? 'active' : '#' }}"><a href="{{ route('admin.faq.index') }}"><i class="fa fa-circle-o"></i> List FAQ</a></li>
+                  <li class="{{ Route::is('admin.subject.index') ? 'active' : '#' }}"><a href="{{ route('admin.subject.index') }}"><i class="fa fa-circle-o"></i> Subject</a></li>
               </ul>
           <li class="treeview">
               <a href="#">

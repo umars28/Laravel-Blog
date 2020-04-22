@@ -15,14 +15,13 @@ class CreateFaqsTable extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->text('description');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('email');
-            $table->string('contact_number');
-            $table->text('message');
+            $table->text('question');
+            $table->text('answer');
+            $table->unsignedBigInteger('subject_faqs_id')->nullable();
             $table->timestamps();
+        });
+        Schema::table('faqs', function (Blueprint $table) {
+            $table->foreign('subject_faqs_id')->references('id')->on('subject_faqs');
         });
     }
 

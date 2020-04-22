@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1a3026f-b62f-46d8-bcd7-8d74fb143b68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminContactController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminFeedbackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Model/Feedbacks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_22_060249_create_feedbacks_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ContactTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/adminContact/contactIndex.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/adminFeedback/feedbackIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminFaqController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminSubjectController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminFaq/faqEdit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminFaq/faqIndex.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminFaq/subjectEdit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminFaq/subjectIndex.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Faqs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/SubjectFaq.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/SubjectFaq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_15_111613_create_faqs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_22_083038_create_faqs_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -173,7 +173,7 @@
       <workItem from="1587272079896" duration="139000" />
       <workItem from="1587382054669" duration="23587000" />
       <workItem from="1587460412246" duration="17415000" />
-      <workItem from="1587515985389" duration="11355000" />
+      <workItem from="1587515985389" duration="18644000" />
     </task>
     <servers />
   </component>
@@ -200,17 +200,21 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587272114192" />
-    <state x="505" y="191" key="NewPhpFileDialog" timestamp="1587533187260">
+    <state x="461" y="167" key="NewPhpClassDialog" timestamp="1587542044299">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="505" y="191" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587533187260" />
+    <state x="461" y="167" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1587542044299" />
+    <state x="505" y="191" key="NewPhpFileDialog" timestamp="1587546404185">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="505" y="191" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587546404185" />
     <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587516028275">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587516028275" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587532804656">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587541829147">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587532804656" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587541829147" />
   </component>
 </project>
