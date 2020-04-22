@@ -51,7 +51,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="{{ route('admin.categories.save') }}">
+                <form action="{{ route('admin.categories.save') }}" method="post">
                 @csrf
                     <div class="form-group">
                         <label for="cat">Category</label>

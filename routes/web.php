@@ -26,10 +26,14 @@ Route::group(['prefix' => 'Admin'], function () {
     Route::post('/about/{id}', 'Admin\AdminAboutController@update')->name('admin.about.update');
 });
 Route::group(['prefix' => 'Admin'], function () {
-    Route::get('/categories', 'Admin\AdminCategoriesTable@index')->name('admin.categories.index');
-    Route::get('/categories/save', 'Admin\AdminCategoriesTable@save')->name('admin.categories.save');
-    Route::get('/categories/edit{id}', 'Admin\AdminCategoriesTable@edit')->name('admin.categories.edit');
-    Route::put('/categories/update{id}', 'Admin\AdminCategoriesTable@update')->name('admin.categories.update');
+    Route::get('/list-articles', 'Admin\AdminArticlesController@index')->name('admin.articles.index');
+    Route::post('/articles/save', 'Admin\AdminArticlesController@save')->name('admin.articles.save');
+    Route::get('/articles/edit/{id}', 'Admin\AdminArticlesController@edit')->name('admin.articles.edit');
+    Route::put('/articles/update/{id}', 'Admin\AdminArticlesController@update')->name('admin.articles.update');
+    Route::get('/categories', 'Admin\AdminCategoriesController@index')->name('admin.categories.index');
+    Route::post('/categories/save', 'Admin\AdminCategoriesController@save')->name('admin.categories.save');
+    Route::get('/categories/edit{id}', 'Admin\AdminCategoriesController@edit')->name('admin.categories.edit');
+    Route::put('/categories/update{id}', 'Admin\AdminCategoriesController@update')->name('admin.categories.update');
 });
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');

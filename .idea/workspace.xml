@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1a3026f-b62f-46d8-bcd7-8d74fb143b68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/categories.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/categoriesEdit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ImageUpload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/articleEdit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/adminArticle/articleIndex.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminCategoriesTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminCategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Article.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminAbout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Media.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Media.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminArticle/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminArticle/categories.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminLayouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -163,7 +168,11 @@
       <workItem from="1586843405552" duration="16017000" />
       <workItem from="1586947485520" duration="11863000" />
       <workItem from="1587039293946" duration="6199000" />
-      <workItem from="1587124412079" duration="11605000" />
+      <workItem from="1587124412079" duration="11901000" />
+      <workItem from="1587272079896" duration="139000" />
+      <workItem from="1587382054669" duration="23587000" />
+      <workItem from="1587460412246" duration="17415000" />
+      <workItem from="1587515985389" duration="6494000" />
     </task>
     <servers />
   </component>
@@ -171,17 +180,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="505" y="191" key="NewPhpFileDialog" timestamp="1587135174058">
+    <state x="315" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587383129075">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="505" y="191" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587135174058" />
-    <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587124503988">
+    <state x="315" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1587383129075" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1587272114192">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587124503988" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587136167117">
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587272114192" />
+    <state x="505" y="191" key="NewPhpFileDialog" timestamp="1587472670470">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587136167117" />
+    <state x="505" y="191" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1587472670470" />
+    <state x="359" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587516028275">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="359" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1587516028275" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587472413758">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1587472413758" />
   </component>
 </project>

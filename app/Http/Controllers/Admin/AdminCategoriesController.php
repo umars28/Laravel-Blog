@@ -7,7 +7,7 @@ use App\Model\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class AdminCategoriesTable extends Controller
+class AdminCategoriesController extends Controller
 {
     public function index() {
         $categories = DB::table('categories')->orderBy('id','DESC')->paginate(5);
