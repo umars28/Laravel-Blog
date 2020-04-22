@@ -35,6 +35,11 @@ Route::group(['prefix' => 'Admin'], function () {
     Route::get('/categories/edit{id}', 'Admin\AdminCategoriesController@edit')->name('admin.categories.edit');
     Route::put('/categories/update{id}', 'Admin\AdminCategoriesController@update')->name('admin.categories.update');
 });
+Route::group(['prefix' => 'Admin'], function () {
+    Route::get('/contact-us/index', 'Admin\AdminContactController@index')->name('admin.contact.index');
+    Route::post('/contact-us/update{id}', 'Admin\AdminContactController@update')->name('admin.contact.update');
+    Route::get('/feedback/show', 'Admin\AdminFeedbackController@show')->name('admin.feedback.index');
+});
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');
 

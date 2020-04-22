@@ -57,6 +57,10 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
+            <ul class="treeview-menu">
+                <li class="{{ Route::is('admin.contact.index') ? 'active' : '#'}}"><a href="{{ route('admin.contact.index') }}"><i class="fa fa-circle-o"></i> Edit Contact Us</a></li>
+                <li class="{{ Route::is('admin.feedback.index') ? 'active' : '#'}}"><a href="{{ route('admin.feedback.index') }}"><i class="fa fa-circle-o"></i> Show Feedback</a></li>
+            </ul>
         </li>
           <li class="treeview">
               <a href="#">
