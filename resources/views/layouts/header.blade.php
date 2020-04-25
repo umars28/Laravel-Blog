@@ -13,11 +13,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="index.html">Home</a>
+                <li class="{{ Request::segment(1) == '' ? 'active' : '' }}">
+                    <a href="{{ route('homepage.index') }}">Home</a>
                 </li>
-                <li>
-                    <a href="about.html">About</a>
+                <li class="{{ Request::segment(2) == 'about' ? 'active' : '' }}">
+                    <a href="{{ route('about.index') }}">About</a>
                 </li>
                 <li>
                     <a href="post.html">Sample Post</a>

@@ -52,5 +52,6 @@ Route::group(['prefix' => 'Admin'], function () {
 });
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');
+Route::get('/about', 'AboutController@index')->name('about.index');
 
 
