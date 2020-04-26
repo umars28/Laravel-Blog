@@ -10,6 +10,10 @@
 
     @yield('title')
 
+
+    <!-- Google recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- Bootstrap Core CSS -->
     <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
 

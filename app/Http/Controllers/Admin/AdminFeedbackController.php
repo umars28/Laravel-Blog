@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 class AdminFeedbackController extends Controller
 {
     public function show() {
-        $feedbacks = DB::table('feedbacks')->paginate(5);
+        $feedbacks = Feedbacks::with('category')->paginate(5);
         return view('adminFeedback.feedbackIndex', compact('feedbacks'));
     }
 }

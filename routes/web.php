@@ -53,5 +53,7 @@ Route::group(['prefix' => 'Admin'], function () {
 
 Route::get('/home', 'HomepageController@index')->name('homepage.index');
 Route::get('/about', 'AboutController@index')->name('about.index');
+Route::get('/contact-us', 'FeedbackController@index')->name('feedback.index');
+Route::post('/contact-us/save', 'FeedbackController@save')->name('feedback.save');
 
 

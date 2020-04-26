@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Feedbacks extends Model
 {
-    protected $fillable = ['first_name', 'last_name', 'email', 'phone_number', 'message'];
+    protected $fillable = ['first_name', 'last_name','category', 'email', 'phone_number', 'message'];
+
+    public function category() {
+        return $this->belongsTo(Category::class,'categories_id');
+    }
 }

@@ -18,6 +18,7 @@
                         <th>Name</th>
                         <th>Email</th>
                         <th>Contact Number</th>
+                        <th>Category</th>
                         <th>Description</th>
                     </tr>
                     @foreach($feedbacks as $feedback)
@@ -26,6 +27,7 @@
                             <td>{{ $feedback->first_name. ' ' .$feedback->last_name }}</td>
                             <td>{{ $feedback->email }}</td>
                             <td>{{ $feedback->phone_number }}</td>
+                            <td>{{ $feedback->category->category }}</td>
                             <td>{{ $feedback->description }}</td>
                         </tr>
                     @endforeach

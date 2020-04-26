@@ -22,8 +22,8 @@
                 <li>
                     <a href="post.html">Sample Post</a>
                 </li>
-                <li>
-                    <a href="contact.html">Contact</a>
+                <li class="{{ Request::segment(4) == 'contact-us' ? 'active' : '' }}">
+                    <a href="{{ route('feedback.index') }}">Contact</a>
                 </li>
             </ul>
         </div>
