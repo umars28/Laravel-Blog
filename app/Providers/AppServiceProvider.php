@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Model\ContactUs;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\View\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,5 +28,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+//        $contactUs = DB::table('contact_us')->first();
+//        View::share(['contactUs' => $contactUs]);
+
     }
 }

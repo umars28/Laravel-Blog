@@ -55,5 +55,7 @@ Route::get('/home', 'HomepageController@index')->name('homepage.index');
 Route::get('/about', 'AboutController@index')->name('about.index');
 Route::get('/contact-us', 'FeedbackController@index')->name('feedback.index');
 Route::post('/contact-us/save', 'FeedbackController@save')->name('feedback.save');
+Route::get('/faq', 'FaqController@index')->name('faq.index');
+Route::get('/{id}', 'ArticleController@show')->name('article.detail');
 
 

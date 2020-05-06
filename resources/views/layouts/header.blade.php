@@ -7,7 +7,7 @@
                 <span class="sr-only">Toggle navigation</span>
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,8 +19,8 @@
                 <li class="{{ Request::segment(2) == 'about' ? 'active' : '' }}">
                     <a href="{{ route('about.index') }}">About</a>
                 </li>
-                <li>
-                    <a href="post.html">Sample Post</a>
+                <li class="{{ Request::segment(3) == 'faq' ? 'active' : '' }}">
+                    <a href="{{ route('faq.index') }}">FAQ</a>
                 </li>
                 <li class="{{ Request::segment(4) == 'contact-us' ? 'active' : '' }}">
                     <a href="{{ route('feedback.index') }}">Contact</a>

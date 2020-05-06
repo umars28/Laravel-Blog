@@ -11,6 +11,7 @@ class AdminCategoriesController extends Controller
 {
     public function index() {
         $categories = DB::table('categories')->orderBy('id','DESC')->paginate(5);
+//        $categories = DB::table('categories')->take(3)->get();
         return view('adminArticle.categories', ['categories' => $categories]);
     }
     public function create() {
