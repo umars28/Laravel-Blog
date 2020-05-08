@@ -9,9 +9,14 @@ use Illuminate\Support\Facades\DB;
 
 class HomepageController extends Controller
 {
-    public function index() {
+    public function index(Request $request) {
         $homepage = Homepages::first();
-        $articles = Article::with('media')->orderBy('id','DESC')->get();
+        if ($request->has('cari')) {
+        	$cari = $request->cari;
+        	$articles = Article::with('media')->where('title', 'like', "%" .$cari. "%")->paginate();
+        } else {
+            $articles = Article::with('media')->orderBy('id','DESC')->take(7)->paginate(7);
+        }
         return view('homepage.index', compact('homepage', 'articles'));
     }
 }
