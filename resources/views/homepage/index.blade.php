@@ -22,13 +22,16 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6 text-sm-right float-right">
+            <div class="col-md-4 col-md-offset-9">
                 <form action="{{ route('homepage.index') }}" class="form-inline">
                     <input type="text" name="cari" class="form-control" placeholder="Search Article ..." value="{{ old('cari') }}">
                     <input type="submit" value="CARI" class="btn btn-success btn-sm">
                 </form>
             </div>
-
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 @foreach($articles as $article)
                 <div class="post-preview">

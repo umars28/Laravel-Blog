@@ -16,7 +16,7 @@
       </a>
       <div class="navbar-custom-menu">
           <div class="btn btn-right">
-              <a href="#" class="btn btn-facebook text-md-center">Sign out</a>
+              <a href="{{ route('logout') }}" class="btn btn-facebook text-md-center">Sign out</a>
           </div>
       </div>
     </nav>

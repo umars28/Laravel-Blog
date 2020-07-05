@@ -56,6 +56,7 @@
                     <div class="form-group">
                         <label for="cat">Category</label>
                         <input type="text" class="form-control" name="category" id="cat" placeholder="Input category">
+                        <p class="text-danger">{{ $errors->first('category') }}</p>
                     </div>
                 <div class="form-group">
                     <label for="status">Status</label>

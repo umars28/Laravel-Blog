@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Media extends Model
@@ -10,5 +11,9 @@ class Media extends Model
 
     public function article() {
         return $this->hasOne(Article::class);
+    }
+
+    public function user() {
+        return $this->hasOne(User::class);
     }
 }

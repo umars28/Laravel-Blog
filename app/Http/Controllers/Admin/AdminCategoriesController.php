@@ -19,6 +19,9 @@ class AdminCategoriesController extends Controller
     }
 
     public function save(request $request) {
+        $this->validate($request, [
+            'category' => 'required'
+        ]);
         $category = new Category();
         $category->category = $request->category;
         $category->status = $request->status;

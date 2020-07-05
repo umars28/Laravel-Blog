@@ -51,6 +51,11 @@
 
     <!-- Theme JavaScript -->
     <script src="{{ url('js/clean-blog.min.js') }}"></script>
+    <!-- Live Chat Widget powered by https://keyreply.com/chat/ -->
+<!-- Advanced options: -->
+<!-- data-align="left" -->
+<!-- data-overlay="true" -->
+<script data-align="right" data-overlay="false" id="keyreply-script" src="//keyreply.com/chat/widget.js" data-color="#FF9800" data-apps="JTdCJTdE"></script>
 
 </body>
 

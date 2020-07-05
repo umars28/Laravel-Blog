@@ -34,33 +34,26 @@
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
 
-        <form action="{{ route('login') }}" method="post">
+        @if(session('message'))
+             <div class="alert alert-danger">{{ session('message') }}</div>
+        @endif
+
+        <form action="{{ route('store.login') }}" method="post">
             @csrf
             <div class="form-group has-feedback">
-                <input type="email" class="form-control {{ $errors->has('email') ? 'error' : '' }}" placeholder="Email" required autocomplete="email" autofocus>
+                <input type="email" class="form-control" name="email" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control {{ $errors->has('password') ? 'error' : '' }}" placeholder="Password" required autocomplete="current-password">
+                <input type="password" class="form-control" placeholder="Password" name="password" required autocomplete="current-password">
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
             <div class="row">
-                @if($errors->has('email'))
-                    <div class="col-md-12">
-                        <p class="text-danger">Username or password doesnt exist !</p>
-                    </div>
-                @endif
                 <div class="col-xs-4">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
                 </div>
-                <!-- /.col -->
             </div>
         </form>
-        @if (Route::has('password.request'))
-            <a class="btn btn-link" href="{{ route('password.request') }}">
-                {{ ('Forgot Your Password?') }}
-            </a>
-        @endif
     </div>
     <!-- /.login-box-body -->
 </div>

@@ -75,6 +75,7 @@
                   <li class="{{ Route::is('admin.faq.index') ? 'active' : '#' }}"><a href="{{ route('admin.faq.index') }}"><i class="fa fa-circle-o"></i> List FAQ</a></li>
                   <li class="{{ Route::is('admin.subject.index') ? 'active' : '#' }}"><a href="{{ route('admin.subject.index') }}"><i class="fa fa-circle-o"></i> Subject</a></li>
               </ul>
+          </li>
           <li class="treeview">
               <a href="#">
                   <i class="fa fa-edit"></i> <span>Master</span>
@@ -83,8 +84,9 @@
             </span>
               </a>
               <ul class="treeview-menu">
-                  <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Lihat Profil</a></li>
+                  <li class="{{ Route::is('admin.profil') ? 'active' : '#' }}"><a href="{{ route('admin.profil') }}"><i class="fa fa-circle-o"></i> Lihat Profil</a></li>
               </ul>
+          </li>
       </ul>
     </section>
     <!-- /.sidebar -->
